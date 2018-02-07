@@ -1,3 +1,10 @@
+//INSTRUCCIONES PARA HACER PULL REQUEST
+
+// PR1: Equipo / Procedimientos - Modificar el código a funciones por procedimientos
+// PR2: Equipo / OOP - Modificar a Programación orientada a objetos
+// PR3: Equipo / Programación funcional - Modificar a Programación funcional
+//------------------------------------------------------------------------------------
+
 // modules are defined as an array
 // [ module function, map of requires ]
 //
@@ -153,9 +160,36 @@ function initListeners(){
   });
 }
 
+//------------------------------------------------------------------
+//Ejemplo de objeto de la clase del 6-02-2017
+/*function Note(texto, autor, fecha, status) {
+  this.statuses = {
+    ACTIVE: "active",
+    PENDANT: "pendant"
+  },
+  this.texto = texto;
+  this.autor = autor;
+  this.fecha = fecha;
+  this.status = this.statuses.ACTIVE;
+}
+
+Note.prototype.setStatus = function (newStatus) {
+    if(newStatus in this.statuses){
+      this.status = newStatus;
+    }
+  };
+
+var note = new Note('aloha', 'Pedrito', new Date(), 'active');*/
+//------------------------------------------------------------------
+
+function Cart(objects){
+  this.objects = objects;
+};  
+
 $(function(){
   render();
   initListeners();
+  console.log(note);
 });
 },{}],0:[function(require,module,exports) {
 var global = (1, eval)('this');
